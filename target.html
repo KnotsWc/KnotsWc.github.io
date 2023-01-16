@@ -41,7 +41,7 @@
           var targetDescription = document.getElementById("target-description").value;
   
           var newTarget = document.createElement("li");
-          newTarget.innerHTML = "<h2>" + targetName + "</h2>" + "<p>" + targetDescription + "</p>" ;
+          newTarget.innerHTML = "<input type='checkbox' id='check'>" + "<h2>" + targetName + "</h2>" + "<p>" + targetDescription + "</p>";
   
           var targetList = document.getElementById("target-list");
           targetList.appendChild(newTarget);
