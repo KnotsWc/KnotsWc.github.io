@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="loginpage.css">
+        <link rel="stylesheet" href="style.css">
+        <div class="topnav">
+            <a  href="index.html">Home</a>
+            <a href="signup.html" id="signuplink">Sign Up</a>
+            <a class="active" href="login.html" id="loginlink">Login</a>
+            <!-- <a href="goals.html" id="goallink">My Goals</a> -->
+          </div>
+    </head>
+    <body>
+        <div id="loginform">
+            <form>
+                <div class="login">
+                <h1>Login</h1>
+                <p>Please enter your username and password.</p>
+                <hr>
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>               
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>  
+                <span> <a href="#">Forgot password?</a></span> <br>    
+                
+                <label>
+                 <input type="checkbox" checked="checked" name="remember"> Remember me
+               </label> <br>
+               <input type="button" id="loginbtn" value="Login"onclick="profile()"> </button>
+             </div>             
+             <div class="container" style="background-color:#f1f1f1">
+               <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+               
+                </div>
+            </form>
+        </div>
+    </body>
+    <script>
+        function profile(){
+            location.href="goals.html"
+        }
+    </script>
+</html>

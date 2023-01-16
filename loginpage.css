@@ -1,0 +1,50 @@
+input[type=text], input[type=password] {
+    color: linen;
+    width: 100%;
+    padding: 13px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #e1dfe2;
+  }
+  label{
+    font-size: 12pt;
+  }
+  
+  p{
+    margin-left: 10px;
+  }
+  h1{
+    color: rgb(164, 24, 24);
+  }
+  #loginbtn {
+    margin-top: 20px;
+    color:#fff;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:150px;
+    height:40px;
+    border-width:1px;
+    border-color:#4e6096;
+    border-top-left-radius:9px;
+    border-top-right-radius:9px;
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius:9px;
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    text-shadow: 0px 1px 0px #283966;
+    background:linear-gradient(rgb(120, 146, 194), #476e9e);
+    margin-left: 10px;
+    }
+    
+   #loginbtn:hover {
+    background: linear-gradient(rgb(128, 150, 191), #4d72a0);
+    transform: translateY(-2px);
+    }
+  
+    #loginform {
+      width: 60%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      margin-left: 20px;
+    }

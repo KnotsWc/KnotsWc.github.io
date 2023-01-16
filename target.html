@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Targets</title>
+    <!-- <link rel="stylesheet" href="signuppage.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="goal.css">
+    <link rel="stylesheet" href="targets.css">
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="signup.html" id="signuplink">Sign Up</a>
+        <a href="login.html" id="loginlink">Login</a>
+        <a href="goals.html" id="goallink">My Goals</a>
+        <a class="active" href="targets.html" id="targetlink">My Targets</a>
+      </div>
+</head>
+
+    <body>
+        <h1> Break It Into Targets: </h1>
+
+        <form id="target-form">
+            <label for="target-name">Target Name:</label>
+            <input type="text" id="target-name" name="target-name" required>
+            <br>
+            <label for="target-description">Target Description:</label>
+            <textarea id="target-description" name="target-description"></textarea>
+            <br>
+            <br>
+            <input type="button" id="savebtn" value="Save" onclick="targetAdd()">
+        </form>
+
+        <h1>My Targets:</h1>
+        <ul id="target-list">
+        </ul>
+        
+    </body>
+
+    <script>
+        function targetAdd() {
+          var targetName = document.getElementById("target-name").value;
+          var targetDescription = document.getElementById("target-description").value;
+  
+          var newTarget = document.createElement("li");
+          newTarget.innerHTML = "<h2>" + targetName + "</h2>" + "<p>" + targetDescription + "</p>" ;
+  
+          var targetList = document.getElementById("target-list");
+          targetList.appendChild(newTarget);
+        }
+
+    </script>
+
+</html>

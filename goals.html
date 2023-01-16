@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SMART Goals: Set Goals To Achieve</title>
+    <link rel="stylesheet" href="goal.css">
+
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+
+<div class="topnav">
+    <a  href="index.html">Home</a>
+    <a href="signup.html" id="signuplink">Sign Up</a>
+    <a href="login.html" id="loginlink">Login</a>
+    <a class="active" href="goals.html" id="goallink">My Goals</a>
+    <a href="target.html" id="targetlink" id="targetlink">My Targets</a>
+
+  </div>
+</head>
+
+    <body>
+        <h1> Create New Goal: </h1>
+
+        <form id="goal-form">
+            <label for="goal-name">Goal Name:</label>
+            <input type="text" id="goal-name" name="goal-name" required>
+            <br>
+            <label for="goal-description">Goal Description:</label>
+            <textarea id="goal-description" name="goal-description"></textarea>
+            <br>
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" name="due-date" required>
+            <br>
+            <br>
+            <input type="button" value="Create Goal" onclick="addGoal()">
+        </form>
+
+        <h1>My Goals:</h1>
+        <ul id="goal-list">
+        </ul>
+        
+    </body>
+
+    <script>
+        function addGoal() {
+          var goalName = document.getElementById("goal-name").value;
+          var goalDescription = document.getElementById("goal-description").value;
+          var dueDate = document.getElementById("due-date").value;
+  
+          var newGoal = document.createElement("li");
+          newGoal.innerHTML = "<h2>" + goalName + "</h2>" + "<p>" + goalDescription + "</p>" + "<span>" + dueDate + "</span>" + 
+          "<br><button id='targets' onclick='addTarget()'> Targets </button> <ul id=TargetList><ul>";
+  
+          var goalList = document.getElementById("goal-list");
+          goalList.appendChild(newGoal);
+        }
+
+        function addTarget(){
+            location.href = "target.html"
+            // you can write your implementation for adding some targets here. 
+            // This way added targets are shown per goal, but you could also make it redirect to another page where the targets can be shown. 
+        }
+    </script>
+
+</html>
