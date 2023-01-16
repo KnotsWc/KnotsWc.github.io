@@ -70,6 +70,7 @@ li {
 }
 
 li h2 {
+  position: relative;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
@@ -78,13 +79,6 @@ li h2 {
 
 li p {
   margin-bottom: 5px;
-}
-
-li span {
-  font-size: 0.8em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: gray;
-  display: block;
 }
 
 .topnav{
